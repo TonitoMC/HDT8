@@ -8,6 +8,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Model model = new Model();
+        model.readFile();
+        VectorHeap<Patient> patientList = model.getPatientData();
+        while (!patientList.isEmpty()){
+            System.out.println(patientList.remove().getData());
+        }
     }
 }
