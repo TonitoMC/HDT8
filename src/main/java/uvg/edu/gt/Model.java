@@ -16,7 +16,7 @@ public class Model {
         try (BufferedReader br = new BufferedReader(new FileReader("pacientes.txt"))){
             while ((line = br.readLine()) != null){
                 String[] separated = line.split(",");
-                Patient tempPatient = new Patient(separated[0], separated[1], separated[2]);
+                Patient tempPatient = new Patient(separated[0], separated[1], separated[2].replaceAll(" ", ""));
                 patientData.add(tempPatient);
             }
         } catch (IOException e){

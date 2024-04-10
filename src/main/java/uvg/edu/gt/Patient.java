@@ -7,7 +7,7 @@ public class Patient implements Comparable<Patient> {
     public Patient(String name, String condition, String priority){
         this.name = name;
         this.condition = condition;
-        this.priority = priority.charAt(1);
+        this.priority = priority.charAt(0);
     }
     public int compareTo(Patient toCompare) {
         return priority.compareTo(toCompare.getPriority());
