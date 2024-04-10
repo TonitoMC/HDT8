@@ -16,6 +16,9 @@ Carmen Sarmientos, dolores de parto,B
 Juan Perez, fractura de pierna,C
 Lorenzo Toledo, chikunguya,E
 ```
+##Versión  Alternativa
+También se desarrolló una versión alternativa utilizando el PriorityQueue del Java Collections Framework en vez de la implementación de VectorHeap, esta se encuentra en el siguiente repositorio:
+https://github.com/TonitoMC/HDT8_ALT
 El programa funciona implementando un Priority Queue utilizando un VectorHeap, donde se van agregan los elementos y luego se van retirando uno por uno (retirando el que requiere atención más inmediata) y termina cuando este VectorHeap se encuentra vacío.
 ## Instalación
 
